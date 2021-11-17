@@ -12,6 +12,6 @@ an understanding of display flex.
 
 ## Deployed Links
 
-* [The URL of the deployed application.]()
+* [The URL of the deployed application.](https://simone188535.github.io/Personal-Portfolio/)
 
 * [The URL of the GitHub repository.](https://github.com/simone188535/Personal-Portfolio)
