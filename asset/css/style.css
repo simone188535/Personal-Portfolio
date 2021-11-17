@@ -185,6 +185,23 @@ main section.work .work-display-box a img {
     height: 250px;
 }
 
+footer section.contact-me .contact-info {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+footer section.contact-me .contact-info li {
+    list-style-type: none;
+    flex: 1 1 50%;
+    height: 50px;
+    font-size: 1.1em;
+}
+
+footer section.contact-me .contact-info li a {
+    color: var(--orange-alpha);
+}
+
 
 @media screen and (max-width: 992px) {
     main section.work .work-display-box {
