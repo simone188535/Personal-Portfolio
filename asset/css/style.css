@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Roboto+Condensed&display=swap');
 
 :root {
     --white: white;
@@ -8,22 +8,23 @@
     --orange-red-alpha: rgba(255, 87, 81, 1);
     --dark-orange-red-alpha: rgba(255, 81, 87, 1);
     --orange-white: rgba(249, 245, 241, 1);
+    --Roboto: 'Roboto Condensed', sans-serif;
 }
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-
-.header-nav {
-    background-color: var(--dark-orange-red-alpha);
+    font-family: 'Barlow', sans-serif;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.header-nav {
+    background-color: var(--dark-orange-red-alpha);
+}
 .header-nav .header-nav-list {
     display: flex;
     list-style-type: none;
@@ -48,35 +49,31 @@ body {
     color: #f8f8f8;
 }
 
-section:not(:last-child) {
-    min-height: 100vh;
-}
-
-section:last-child {
-    min-height: 50vh;
+section {
+    padding-bottom: 3rem;
 }
 
 section.hero {
     /* background: rgb(249, 245, 241);
     background: radial-gradient(circle, rgba(249, 245, 241, 1) 0%, var(--orange-alpha) 41%, rgba(255, 87, 81, 1) 70%, rgba(255, 81, 87, 1) 90%); */
+    padding: 0;
 }
 
 section.hero article {
-        /* background: rgb(249, 245, 241); */
+    /* background: rgb(249, 245, 241); */
     /* background: radial-gradient(circle, rgba(249, 245, 241, 1) 0%, var(--orange-alpha) 41%, rgba(255, 87, 81, 1) 70%, rgba(255, 81, 87, 1) 90%); */
     /* background: rgb(255,152,0);
     background: radial-gradient(circle, rgba(255,152,0,1) 5%, rgba(255,87,81,1) 70%, rgba(255,81,87,1) 90%); */
     height: 100vh;
     background:
-      linear-gradient( var(--black-alpha), var(--black-alpha)),
-      url('../images/pexels-skitterphoto-705164.jpg') no-repeat center center fixed;
+        linear-gradient(var(--black-alpha), var(--black-alpha)),
+        url('../images/pexels-skitterphoto-705164.jpg') no-repeat center center fixed;
     /* background-color: #343a40; */
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Roboto Condensed', sans-serif;
 }
 
 section.hero article h1,
@@ -88,10 +85,68 @@ section.hero article h2 {
     color: var(--white);
     text-shadow: 2px 2px #1c1b20;
     padding: .5rem 1rem;
+    font-family: var(--Roboto);
 }
 
 section.hero article h1 {
     font-size: 3rem;
+}
+
+section article h3.article-header {
+    font-family: var(--Roboto);
+    font-size: 2rem;
+    text-align: center;
+    margin: 2em auto;
+}
+
+main section:not(:last-child) {
+    min-height: 100vh;
+}
+
+main section:last-child {
+    min-height: 50vh;
+}
+
+main section article {
+    overflow: auto;
+}
+
+main section.about-me {
+    background-color: var(--orange-white);
+}
+
+main section.about-me .about-me-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main section.about-me .about-me-details .about-me-avatar {
+    flex: 0 1 250px;
+}
+
+main section.about-me .about-me-details .about-me-info {
+    line-height: 2;
+    letter-spacing: 1px;
+    flex: 0 1 50%;
+    padding: 0 15px;
+}
+
+main section.about-me .about-me-details .about-me-info p::before {
+    content: "\201C";
+}
+main section.about-me .about-me-details .about-me-info p::after {
+    content: "\201D";
+}
+
+main section.about-me .about-me-details .about-me-avatar {
+    align-self: center;
+}
+main section.about-me .about-me-details .about-me-avatar img {
+    width: 250px;
+    height: 200px;
+    border-radius: 50%;
+    display: block;
 }
 
 /* @media screen and (max-width: 992px) {
@@ -108,5 +163,20 @@ section.hero article h1 {
     .header-nav .header-nav-list li {
         flex: 1 1 50%;
         text-align: center;
+    }
+
+    main section.about-me .about-me-details .about-me-avatar {
+        order: 1;
+        flex: 1 1 100%;
+        margin-bottom: 2rem;
+    }
+
+    main section.about-me .about-me-details .about-me-avatar img {
+        margin: 0 auto;
+    }
+    
+    main section.about-me .about-me-details .about-me-info {
+        order: 2;
+        flex: 1 1 100%;
     }
 }
