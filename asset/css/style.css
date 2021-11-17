@@ -152,11 +152,12 @@ main section.work {
 main section.work .work-display {
     display: flex;
     flex-wrap: wrap;
-    max-width: 90%;
+    width: 90%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
-main section.work .work-display-box {
+main section.work .work-display .work-display-box {
     flex: 1 1 46%;
     margin: 1em;
     position: relative;
@@ -166,7 +167,7 @@ main section.work #feature-project {
     flex: 1 1 100%;
 }
 
-main section.work .work-display-box figcaption {
+main section.work .work-display .work-display-box figcaption {
     position: absolute;
     left: 0%;
     bottom: 0%;
@@ -179,7 +180,7 @@ main section.work #feature-project a img {
     height: 500px;
 }
 
-main section.work .work-display-box a img {
+main section.work .work-display .work-display-box a img {
     display: block;
     width: 100%;
     height: 250px;
@@ -204,7 +205,8 @@ footer section.contact-me .contact-info li a {
 
 
 @media screen and (max-width: 992px) {
-    main section.work .work-display-box {
+
+    main section.work .work-display .work-display-box {
         flex: 1 1 45%;
     }
 }
@@ -238,7 +240,7 @@ footer section.contact-me .contact-info li a {
         height: 300px;
     }
 
-    main section.work .work-display-box {
+    main section.work .work-display .work-display-box {
         flex: 1 1 100%;
     }
     
