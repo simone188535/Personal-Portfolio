@@ -4,8 +4,7 @@
 This is a mock porfolio site displaying basic web design and
 responsive design skills. It utilizes "desktop first" css
 stylings. It also demonstrates the use of pseudo-elements and
-an understanding of display flex. Technology: HTML, CSS, JS,
-Bootstrap.
+an understanding of display flex. Technology: HTML, CSS, JS.
 
 
 ## Visuals
