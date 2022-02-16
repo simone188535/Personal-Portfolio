@@ -163,6 +163,10 @@ main section.work .work-display .work-display-box .project-body {
     line-height: 1.6;
 }
 
+main section.work .work-display .work-display-box .project-url {
+color: var(--orange-white);
+}
+
 main section.work .work-display .work-display-box .figure-container {
     position: relative;
 }
