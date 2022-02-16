@@ -50,7 +50,7 @@ body {
     color: #f8f8f8;
 }
 
-section {
+.page-division {
     padding-bottom: 3rem;
 }
 
@@ -58,7 +58,7 @@ section.hero {
     padding: 0;
 }
 
-section.hero article {
+section.hero .hero-text {
     height: 100vh;
     background:
         linear-gradient(var(--black-alpha), var(--black-alpha)),
@@ -70,8 +70,8 @@ section.hero article {
     align-items: center;
 }
 
-section.hero article h1,
-section.hero article h2 {
+section.hero .hero-text h1,
+section.hero .hero-text h2 {
     background: var(--orange);
     background: linear-gradient(90deg, var(--orange-alpha) 5%, var(--orange-red-alpha) 70%, var(--dark-orange-red-alpha) 90%);
     box-decoration-break: clone;
@@ -82,7 +82,7 @@ section.hero article h2 {
     font-family: var(--Roboto);
 }
 
-section.hero article h1 {
+section.hero .hero-text h1 {
     font-size: 3rem;
 }
 
@@ -93,15 +93,11 @@ section article h3.article-header {
     margin: 2em auto;
 }
 
-main section:not(:last-child) {
+main .page-division:not(:last-child) {
     min-height: 100vh;
 }
 
-/* main section:last-child {
-    min-height: 50vh;
-} */
-
-main section article {
+main section .article {
     overflow: auto;
 }
 
@@ -163,14 +159,11 @@ main section.work .work-display .work-display-box {
     position: relative;
 }
 
-main section.work .work-display .feature-project {
+main section.work .work-display .work-display-box.feature-project {
     flex: 1 1 100%;
 }
 
-/* main section.work .work-display .work-display-box .figure-description{
-    background: var(--off-black);
-} */
-main section.work .work-display .work-display-box figcaption {
+main section.work .work-display .work-display-box .project-header {
     position: absolute;
     left: 0%;
     bottom: 0%;
@@ -239,7 +232,7 @@ footer section.contact-me .contact-info li a {
         flex: 1 1 100%;
     }
 
-    main section.work .work-display .feature-project a img {
+    main section.work .work-display .work-display-box.feature-project a img {
         height: 300px;
     }
 
