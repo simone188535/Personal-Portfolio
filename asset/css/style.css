@@ -156,6 +156,9 @@ main section.work .work-display {
 main section.work .work-display .work-display-box {
     flex: 1 1 46%;
     margin: 1em;
+}
+
+main section.work .work-display .work-display-box .figure-container {
     position: relative;
 }
 
@@ -169,6 +172,7 @@ main section.work .work-display .work-display-box .project-header {
     bottom: 0%;
     padding: 1em 0.5em;
     background: var(--off-black);
+    color: var(--orange-white);
 }
 
 main section.work .work-display .work-display-box.feature-project a img {
