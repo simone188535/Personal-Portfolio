@@ -155,7 +155,12 @@ main section.work .work-display {
 
 main section.work .work-display .work-display-box {
     flex: 1 1 46%;
-    margin: 1em;
+    margin: 1rem;
+}
+
+main section.work .work-display .work-display-box .project-body {
+    margin-top: .7rem;
+    line-height: 1.6;
 }
 
 main section.work .work-display .work-display-box .figure-container {
